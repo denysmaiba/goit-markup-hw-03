@@ -11,6 +11,7 @@ body {
   color: var(--main-color);
 }
 .link {
+  display: block;
   text-decoration: none;
   color: var(--main-color);
 }
@@ -44,7 +45,7 @@ img {
   height: auto;
 }
 .container {
-  margin: 0;
+  margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -52,7 +53,14 @@ img {
 }
 
 /*------------------------ Header ------------------------- */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  /* align-items: center; */
+  /* display: flex; */
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -65,13 +73,12 @@ img {
   color: var(--main-color);
 }
 
-.nav-list .link:hover,
-.nav-list .link:focus {
-  color: var(--accent-color);
+.nav-list {
+  display: flex;
+  margin-left: 93px;
 }
-
-.nav-list .link.current {
-  color: var(--accent-color);
+.nav-list .nav-item + .nav-item {
+  margin-left: 50px;
 }
 
 .nav-item {
@@ -80,13 +87,37 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+.list-nav {
+  display: flex;
+  margin-left: auto;
+}
+.item-nav + .item-nav {
+  margin-left: 50px;
+}
 
 .link-item {
+  display: flex;
+  align-items: center;
+  padding: 32px, 0px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+.nav-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+}
+
+.nav-list .link.current {
+  color: var(--accent-color);
 }
 
 .link-item:hover,
@@ -118,16 +149,24 @@ img {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+
   color: var(--white-color-text);
   background-color: var(--accent-color);
-  cursor: pointer;
 }
 
 /*------------------------ Preference ------------------------- */
 .pref {
   display: flex;
+}
+.features-item {
+  width: 270px;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
 }
 .features-title {
   margin-bottom: 10px;
@@ -220,11 +259,14 @@ img {
   letter-spacing: 0.03em;
 }
 .team-text {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+.shelf {
+  padding: 30px;
 }
 
 /*------------------------ Footer ------------------------- */
@@ -235,6 +277,10 @@ img {
 }
 
 .logo {
+  display: flex;
+}
+
+.logo-footer {
   display: block;
   margin-bottom: 20px;
 }
