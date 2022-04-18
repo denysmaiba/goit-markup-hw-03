@@ -311,8 +311,24 @@ img {
   color: var(--address-links-footer);
 }
 
-/*------------------------ Portfolio ------------------------- */
+/*--------------------- Portfolio ---------------------- */
+
+.cards {
+}
+.filter {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.item-button {
+  border-radius: 4px;
+}
+.item-button + .item-button {
+  margin-right: 8px;
+}
+
 .filter-button {
+  margin-right: 8px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -322,10 +338,7 @@ img {
   cursor: pointer;
 }
 
-.filter .filter-button:hover,
-.filter .filter-button:focus {
-  color: white;
-  background-color: var(--accent-color);
+.card-item {
 }
 
 .card-title {
@@ -333,10 +346,15 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
 .card-text {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.filter .filter-button:hover,
+.filter .filter-button:focus {
+  color: white;
+  background-color: var(--accent-color);
 }
