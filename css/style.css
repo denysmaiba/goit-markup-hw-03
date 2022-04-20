@@ -8,6 +8,7 @@
   --bacground-button: #f5f4fa;
   --bacground-shelf-card: #ffffff;
   --border-shelf-card: #eeeeee;
+  --bacground-team: #f5f4fa;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -167,7 +168,7 @@ img {
 }
 
 /*------------------------ Preference ------------------------- */
-.pref {
+.features {
   display: flex;
 }
 .features-item {
@@ -230,8 +231,7 @@ img {
 
 /*------------------------ Team ------------------------- */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--bacground-team);
 }
 
 .team-caption {
@@ -265,7 +265,6 @@ img {
   letter-spacing: 0.03em;
 }
 .team-text {
-  /* margin-bottom: 30px; */
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -350,14 +349,13 @@ img {
   display: flex;
 }
 .shelf-card {
-  padding: 20px, 24px;
+  padding: 20px 24px;
   background: var(--bacground-shelf-card);
   border: 1px solid var(--border-shelf-card);
   border-top: none;
 }
 
 .card-item {
-  text-align: center;
   margin-right: 30px;
   margin-bottom: 30px;
 
